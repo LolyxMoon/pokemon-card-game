@@ -3,7 +3,7 @@
 A web application for managing and experiencing a digital Pokémon Trading Card Game collection. This project allows users to simulate opening booster packs, view their collected cards in a gallery, and see detailed information for each card.
 
 ---
-
+a
 ## Features
 
 - **Card Pack Openings:** Simulate the excitement of opening a Pokémon booster pack with animation and randomly selected cards.
