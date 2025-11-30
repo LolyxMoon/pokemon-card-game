@@ -117,7 +117,7 @@ function Layout({ children }) {
           <div>
   <b>Follow Us</b>
   <a
-    href="https://github.com/trungLyDal"
+    href=""
     target="_blank"
     rel="noopener noreferrer"
     aria-label="GitHub"
@@ -126,22 +126,13 @@ function Layout({ children }) {
     <FaGithub />
   </a>
   <a
-    href="https://www.linkedin.com/in/trung-ly-dal/"
+    href=""
     target="_blank"
     rel="noopener noreferrer"
     aria-label="LinkedIn"
     style={{ fontSize: '1.5rem' }}
   >
     <FaLinkedin />
-  </a>
-  <a
-    href="mailto:giatrung59@gmail.com"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Email"
-    style={{ fontSize: '1.5rem' }}
-  >
-    <FaEnvelope />
   </a>
 </div>
         </div>
