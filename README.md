@@ -4,7 +4,7 @@ A web application for managing and experiencing a digital Pokémon Trading Card 
 
 ---
 
-## Features
+## Featuresa
 
 - **Card Pack Openings:** Simulate the excitement of opening a Pokémon booster pack with animation and randomly selected cards.
 - **Card Collection Gallery:** Browse your unique collection in a visually appealing grid layout.
