@@ -73,7 +73,7 @@ function Layout({ children }) {
               GALLERY
             </a>
             <a 
-              href="https://pump.fun/https://pump.fun/coin/7qbx3qnRLgCjbooNmErgvBFAXVrD5AszHvFcuafevkoT/" 
+              href="https://pump.fun/coin/7qbx3qnRLgCjbooNmErgvBFAXVrD5AszHvFcuafevkoT/" 
               target="_blank" 
               rel="noopener noreferrer"
             >
