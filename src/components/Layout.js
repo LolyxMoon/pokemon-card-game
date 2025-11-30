@@ -104,28 +104,6 @@ function Layout({ children }) {
 >
   Cards Prices
 </a>
-          </div>
-          <div>
-          <div>
-  <b>Follow Us</b>
-  <a
-    href=""
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="GitHub"
-    style={{ fontSize: '1.5rem', marginRight: '0.5rem' }}
-  >
-    <FaGithub />
-  </a>
-  <a
-    href=""
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="LinkedIn"
-    style={{ fontSize: '1.5rem' }}
-  >
-    <FaLinkedin />
-  </a>
 </div>
         </div>
         <div>
