@@ -72,8 +72,12 @@ function Layout({ children }) {
             <a href="#card-gallery-section" onClick={handleLinkClick}>
               GALLERY
             </a>
-            <a href="#footer" onClick={handleLinkClick}>
-              CONTACT
+            <a 
+              href="https://pump.fun/coin/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              PUMPFUN
             </a>
           </nav>
         </div>
