@@ -106,14 +106,6 @@ function Layout({ children }) {
 </a>
           </div>
           <div>
-            <b>Contact Us</b>
-            <a
-          href="mailto:giatrung59@gmail.com"
-          style={{ textDecoration: 'underline' }}
-            >
-          giatrung59@gmail.com
-            </a>
-          </div>
           <div>
   <b>Follow Us</b>
   <a
