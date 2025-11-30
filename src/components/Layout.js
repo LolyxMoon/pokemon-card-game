@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import './Layout.css';
 import AppLogo from '../assets/images/Pokémon_TCG_logo.png'; 
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
 import PokeballImg from '../assets/images/9.png';
 
 
@@ -56,7 +57,15 @@ function Layout({ children }) {
               isMenuOpen ? 'open' : ''
             }`}
           >
-            {/* Updated hrefs to match the section IDs */}
+            <a 
+              href="https://x.com/Pokecards_sol" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="twitter-icon-link"
+              aria-label="Twitter"
+            >
+              <FaXTwitter />
+            </a>
             <a href="#pack-opening-section" onClick={handleLinkClick}>
               PACK OPENING
             </a>
