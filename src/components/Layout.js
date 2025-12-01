@@ -58,7 +58,7 @@ function Layout({ children }) {
             }`}
           >
             <a 
-              href="https://x.com/i/communities/1995565757858807845/" 
+              href="https://x.com/i/communities/1995583536452026762" 
               target="_blank" 
               rel="noopener noreferrer"
               className="twitter-icon-link"
