@@ -58,7 +58,7 @@ function Layout({ children }) {
             }`}
           >
             <a 
-              href="https://x.com/Pokecards_sol" 
+              href="https://x.com/i/communities/1995565757858807845/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="twitter-icon-link"
@@ -73,7 +73,7 @@ function Layout({ children }) {
               GALLERY
             </a>
             <a 
-              href="https://pump.fun/coin/7qbx3qnRLgCjbooNmErgvBFAXVrD5AszHvFcuafevkoT/" 
+              href="https://pump.fun/coin/" 
               target="_blank" 
               rel="noopener noreferrer"
             >
