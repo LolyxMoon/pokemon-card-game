@@ -67,7 +67,7 @@ const TutorialCallout = () => {
 
   return (
    <section className="tutorial-callout-wrapper">
-  <h2>Try the Interactive 3D Card OPEN PACKS ON PUMPFUN!</h2>
+  <h2>Try the Interactive 3D Card OPEN PACKS ON BNB!</h2>
   <div className="tutorial-content">
     <div className="instruction-text">
   <h3>How It Works</h3>

@@ -58,7 +58,7 @@ function Layout({ children }) {
             }`}
           >
             <a 
-              href="https://x.com/i/communities/1995583536452026762" 
+              href="https://x.com/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="twitter-icon-link"
@@ -73,11 +73,11 @@ function Layout({ children }) {
               GALLERY
             </a>
             <a 
-              href="https://pump.fun/coin/8rZUjTxQjWbqxNHa8DcMTwFiMJKCfchTdfeJkESepump" 
+              href="https://four.meme/token/" 
               target="_blank" 
               rel="noopener noreferrer"
             >
-              PUMPFUN
+              FOUR.MEME
             </a>
           </nav>
         </div>
