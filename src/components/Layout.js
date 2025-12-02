@@ -73,7 +73,7 @@ function Layout({ children }) {
               GALLERY
             </a>
             <a 
-              href="https://four.meme/token/" 
+              href="https://four.meme/token/0x26dad8753f79cab2c12b874eccd1f2da666a4444" 
               target="_blank" 
               rel="noopener noreferrer"
             >
