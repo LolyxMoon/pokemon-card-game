@@ -58,7 +58,7 @@ function Layout({ children }) {
             }`}
           >
             <a 
-              href="https://x.com/" 
+              href="https://x.com/Pokecards_BNB" 
               target="_blank" 
               rel="noopener noreferrer"
               className="twitter-icon-link"
