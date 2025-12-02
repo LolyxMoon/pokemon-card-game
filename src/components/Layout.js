@@ -58,7 +58,7 @@ function Layout({ children }) {
             }`}
           >
             <a 
-              href="https://x.com/Pokecards_BNB" 
+              href="https://x.com/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="twitter-icon-link"
@@ -73,11 +73,11 @@ function Layout({ children }) {
               GALLERY
             </a>
             <a 
-              href="https://four.meme/token/0x26dad8753f79cab2c12b874eccd1f2da666a4444" 
+              href="" 
               target="_blank" 
               rel="noopener noreferrer"
             >
-              FOUR.MEME
+              PUMPFUN
             </a>
           </nav>
         </div>
