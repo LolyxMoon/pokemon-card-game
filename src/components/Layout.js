@@ -2,13 +2,17 @@
 import React, { useState } from 'react';
 import './Layout.css';
 import AppLogo from '../assets/images/Pokémon_TCG_logo.png'; 
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaTelegramPlane, FaCopy, FaCheck } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 import PokeballImg from '../assets/images/9.png';
 
+// Contract address - change this when you have a new contract
+const CONTRACT_ADDRESS = "0xa761506c1ba75f308b27097316333507054f7777";
+const FLAP_LINK = `https://flap.sh/bnb/${CONTRACT_ADDRESS}`;
 
 function Layout({ children }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [copied, setCopied] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -27,6 +31,16 @@ function Layout({ children }) {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
     setIsMenuOpen(false);
+  };
+
+  const copyContractAddress = async () => {
+    try {
+      await navigator.clipboard.writeText(CONTRACT_ADDRESS);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch (err) {
+      console.error('Failed to copy:', err);
+    }
   };
 
   return (
@@ -57,15 +71,41 @@ function Layout({ children }) {
               isMenuOpen ? 'open' : ''
             }`}
           >
-            <a 
-              href="https://x.com/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="twitter-icon-link"
-              aria-label="Twitter"
-            >
-              <FaXTwitter />
-            </a>
+            {/* Social Icons Group */}
+            <div className="social-icons-group">
+              <a 
+                href="https://x.com/pokecardsflap" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="social-icon-link"
+                aria-label="Twitter"
+              >
+                <FaXTwitter />
+              </a>
+              <a 
+                href="https://t.me/pokecardsflap" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="social-icon-link telegram-icon"
+                aria-label="Telegram"
+              >
+                <FaTelegramPlane />
+              </a>
+              
+              {/* Contract Address Copy Button */}
+              <button 
+                className={`contract-copy-btn ${copied ? 'copied' : ''}`}
+                onClick={copyContractAddress}
+                title={`Click to copy: ${CONTRACT_ADDRESS}`}
+                aria-label="Copy contract address"
+              >
+                <span className="contract-text">
+                  {CONTRACT_ADDRESS.slice(0, 6)}...{CONTRACT_ADDRESS.slice(-4)}
+                </span>
+                {copied ? <FaCheck className="copy-icon" /> : <FaCopy className="copy-icon" />}
+              </button>
+            </div>
+
             <a href="#pack-opening-section" onClick={handleLinkClick}>
               PACK OPENING
             </a>
@@ -73,11 +113,11 @@ function Layout({ children }) {
               GALLERY
             </a>
             <a 
-              href="" 
+              href={FLAP_LINK}
               target="_blank" 
               rel="noopener noreferrer"
             >
-              PUMPFUN
+              FLAP
             </a>
           </nav>
         </div>

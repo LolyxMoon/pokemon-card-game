@@ -421,3 +421,132 @@ html, body, #root {
     bottom: var(--distance, 10rem);
   }
 }
+/* --- Social Icons Group --- */
+.social-icons-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.social-icon-link {
+  color: white;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease, transform 0.2s ease;
+  padding: 0.3rem;
+  text-decoration: none;
+}
+
+.social-icon-link:hover {
+  color: #ffcb05;
+  transform: scale(1.15);
+}
+
+.social-icon-link.telegram-icon:hover {
+  color: #0088cc;
+}
+
+/* --- Contract Copy Button --- */
+.contract-copy-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+  border: 1px solid #4a5568;
+  border-radius: 8px;
+  padding: 0.4rem 0.75rem;
+  color: #e2e8f0;
+  font-size: 0.85rem;
+  font-family: 'Courier New', monospace;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.contract-copy-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 203, 5, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.contract-copy-btn:hover {
+  border-color: #ffcb05;
+  box-shadow: 0 0 15px rgba(255, 203, 5, 0.3);
+  transform: translateY(-2px);
+}
+
+.contract-copy-btn:hover::before {
+  left: 100%;
+}
+
+.contract-copy-btn.copied {
+  background: linear-gradient(135deg, #276749 0%, #1a4731 100%);
+  border-color: #48bb78;
+  animation: pulse-success 0.5s ease;
+}
+
+.contract-copy-btn .contract-text {
+  font-weight: 600;
+}
+
+.contract-copy-btn .copy-icon {
+  font-size: 0.9rem;
+  transition: transform 0.2s ease;
+}
+
+.contract-copy-btn:hover .copy-icon {
+  transform: scale(1.2);
+}
+
+.contract-copy-btn.copied .copy-icon {
+  color: #48bb78;
+}
+
+@keyframes pulse-success {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* Mobile styles for social icons and contract button */
+@media (max-width: 768px) {
+  .social-icons-group {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 0.5rem;
+    width: 100%;
+  }
+
+  .social-icon-link {
+    font-size: 1.6rem;
+    padding: 0.5rem;
+  }
+
+  .contract-copy-btn {
+    font-size: 0.75rem;
+    padding: 0.5rem 0.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contract-copy-btn {
+    font-size: 0.7rem;
+    padding: 0.4rem 0.5rem;
+  }
+
+  .contract-copy-btn .contract-text {
+    display: inline;
+  }
+}
