@@ -7,8 +7,8 @@ import { FaXTwitter } from 'react-icons/fa6';
 import PokeballImg from '../assets/images/9.png';
 
 // Contract address - change this when you have a new contract
-const CONTRACT_ADDRESS = "0xa761506c1ba75f308b27097316333507054f7777";
-const FLAP_LINK = `https://flap.sh/bnb/${CONTRACT_ADDRESS}`;
+const CONTRACT_ADDRESS = "";
+const FOURMEME_LINK = `https://four.meme/token/${CONTRACT_ADDRESS}`;
 
 function Layout({ children }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -68,7 +68,7 @@ function Layout({ children }) {
             {/* Social Icons Group */}
             <div className="social-icons-group">
               <a 
-                href="https://x.com/pokecardsflap" 
+                href="https://x.com/poke4cards" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="social-icon-link"
@@ -107,11 +107,11 @@ function Layout({ children }) {
               GALLERY
             </a>
             <a 
-              href={FLAP_LINK}
+              href={FOURMEME_LINK}
               target="_blank" 
               rel="noopener noreferrer"
             >
-              FLAP
+              FourMeme
             </a>
           </nav>
         </div>
