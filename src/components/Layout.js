@@ -2,13 +2,13 @@
 import React, { useState } from 'react';
 import './Layout.css';
 import AppLogo from '../assets/images/Pokémon_TCG_logo.png'; 
-import { FaTelegramPlane, FaCopy, FaCheck } from 'react-icons/fa';
-import { FaXTwitter } from 'react-icons/fa6';
+import { FaCopy, FaCheck } from 'react-icons/fa';
+import { FaXTwitter, FaGithub } from 'react-icons/fa6';
 import PokeballImg from '../assets/images/9.png';
 
 // Contract address - change this when you have a new contract
-const CONTRACT_ADDRESS = "";
-const FOURMEME_LINK = `https://four.meme/token/${CONTRACT_ADDRESS}`;
+const CONTRACT_ADDRESS = "Eavwu5KSaKQHBzvki8oxNZ8RZhWdhG7WXJdTStMApump";
+const PUMPFUN_LINK = `https://pump.fun/coin/${CONTRACT_ADDRESS}`;
 
 function Layout({ children }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -68,7 +68,7 @@ function Layout({ children }) {
             {/* Social Icons Group */}
             <div className="social-icons-group">
               <a 
-                href="https://x.com/poke4cards" 
+                href="https://x.com/i/communities/2022719496499196025" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="social-icon-link"
@@ -77,13 +77,13 @@ function Layout({ children }) {
                 <FaXTwitter />
               </a>
               <a 
-                href="https://t.me/pokecardsflap" 
+                href="https://github.com/LolyxMoon/pokemon-card-game" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="social-icon-link telegram-icon"
-                aria-label="Telegram"
+                className="social-icon-link"
+                aria-label="GitHub"
               >
-                <FaTelegramPlane />
+                <FaGithub />
               </a>
               
               {/* Contract Address Copy Button */}
@@ -107,11 +107,11 @@ function Layout({ children }) {
               GALLERY
             </a>
             <a 
-              href={FOURMEME_LINK}
+              href={PUMPFUN_LINK}
               target="_blank" 
               rel="noopener noreferrer"
             >
-              FourMeme
+              PumpFun
             </a>
           </nav>
         </div>
