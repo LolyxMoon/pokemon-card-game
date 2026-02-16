@@ -1,6 +1,6 @@
 https://www.pokecards.click/
 
-https://x.com/i/communities/2022719496499196025
+
 
 <a href="https://freeimage.host/"><img src="https://iili.io/fxXNYFf.jpg" alt="fxXNYFf.jpg" border="0" /></a>
 ---
